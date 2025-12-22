@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume Addendum | Harini R</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
+
+<style>
+/* ===== Global Styling ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff, #f1f8ff);
+    color: #1e1e2f;
+    line-height: 1.7;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* ===== Resume Header ===== */
+.resume-header {
+    text-align: center;
+    padding: 75px 30px;
+    margin-bottom: 65px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #00796b, #26a69a, #80cbc4);
+    color: #ffffff;
+    box-shadow: 0 22px 45px rgba(0,0,0,0.25);
+    position: relative;
+    overflow: hidden;
+}
+
+.resume-header::after {
+    content: "";
+    position: absolute;
+    width: 170%;
+    height: 80%;
+    background: rgba(255,255,255,0.18);
+    top: -35%;
+    left: -35%;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+}
+
+.resume-header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    text-shadow: 2px 5px 12px rgba(0,0,0,0.35);
+}
+
+.resume-header .name {
+    font-size: 30px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 35px;
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    margin-bottom: 12px;
+}
+
+.resume-header .focus {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+.resume-header .core {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+/* ===== Section Titles ===== */
+h2 {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #004d40, #26a69a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Section Cards ===== */
+.section-gradient {
+    padding: 28px;
+    border-radius: 22px;
+    margin-bottom: 35px;
+    background: linear-gradient(135deg, #ffffff, #e0f2f1);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    transition: all 0.35s ease;
+}
+
+.section-gradient:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 38px rgba(0,0,0,0.18);
+}
+
+/* ===== Clean Bullet Alignment ===== */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.timeline li {
+    position: relative;
+    padding-left: 42px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    color: #333;
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    background: linear-gradient(135deg, #00796b, #26a69a);
+    border-radius: 50%;
+}
+
+/* ===== Projects Grid ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+}
+
+.card {
+    background: linear-gradient(145deg, #ffffff, #b2dfdb);
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 10px 26px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.18);
+}
+
+.card strong {
+    font-size: 18px;
+    color: #004d40;
+}
+
+.card p {
+    font-size: 15px;
+    color: #333;
+}
+
+a {
+    color: #00796b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin: 60px 0 20px;
+    font-weight: 500;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+    .resume-header h1 { font-size: 36px; }
+    .resume-header .name { font-size: 22px; }
+    h2 { font-size: 22px; }
+}
+.video-box {
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.video-box iframe {
+    width: 100%;
+    height: 190px;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- Header -->
+    <div class="resume-header">
+        <h1>Resume Addendum</h1>
+        <div class="name">Harini R</div>
+        
+        
+        <div class="core">Python | Front-End | Java | DSA | OpenCV | ML | SQL</div>
+    </div>
+
+    <!-- Purpose -->
+    <h2>Purpose</h2>
+    <div class="section-gradient">
+        <p>This addendum highlights my technical approach, projects, and professional strengths beyond a traditional resume.</p>
+    </div>
+
+    <!-- Problem Solving -->
+    <h2>Problem-Solving Approach</h2>
+    <div class="section-gradient">
+        <ul class="timeline">
+            <li>Clearly understand requirements and constraints</li>
+            <li>Develop a simple and correct initial solution</li>
+            <li>Analyze time and space complexity</li>
+            <li>Optimize only when required</li>
+            <li>Continuously reflect and improve</li>
+        </ul>
+    </div>
+
+    <!-- Projects -->
+    <h2>Front-End Projects</h2>
+    <div class="projects-grid">
+        <div class="card">
+            <strong>Venue Vista</strong>
+            <p>Holiday booking UI with destination browsing and booking flow.</p>
+            <a href="https://github.com/harini-012/project1-website" target="_blank">GitHub</a>
+			   <div class="video-box">
+        <iframe
+            src="https://drive.google.com/file/d/1sOIwCYlObAYcSXdJK_5w1cT0-PIXBH0A/preview"
+            title="Venue Vista Demo"
+            allow="autoplay"
+            allowfullscreen>
+        </iframe>
+    </div>
+        </div>
+
+
+        <div class="card">
+            <strong>Student Learning Platform</strong>
+            <p>Educational UI for courses, modules, and interaction.</p>
+            <a href="https://github.com/harini-012/project2-website" target="_blank">GitHub</a>
+			
+			   <div class="video-box">
+        <iframe
+    src="https://drive.google.com/file/d/195LojUpstiILi_E0o-fZudgpXj26hRO1/preview
+"
+    title="Venue Vista Demo"
+    allow="autoplay"
+    allowfullscreen>
+</iframe>
+
+		</div>
+        </div>
+
+        <div class="card">
+            <strong>NASA Black Holes</strong>
+            <p>Space-themed informational UI with visuals.</p>
+            <a href="https://github.com/harini-012/project-3-website" target="_blank">GitHub</a>
+			 <div class="video-box">
+        <iframe
+    src="https://drive.google.com/file/d/1urh29GJ6qA6_DqFDqpG8cpHZDOhFQyFw/preview"
+
+    title="Nasa Vista Demo"
+    allow="autoplay"
+    allowfullscreen>
+</iframe>
+
+		</div>
+        </div>
+            <div class="card">
+                <strong>Theatre Booking Application</strong>
+                <p>Ticket booking interface with seat selection and showtime flow.</p>
+               <a href="https://github.com/harini-012/project4website" target="_blank">GitHub</a>
+			    <div class="video-box">
+        <iframe
+    src="https://drive.google.com/file/d/1crpG9MVHHMuIJ2Gb4X7q8szRoEAT78xB/preview"
+    title="Thetre Vista Demo"
+    allow="autoplay"
+    allowfullscreen>
+</iframe>
+
+		</div>
+            </div>
+            <div class="card">
+                <strong>Zayla – E-Commerce Website</strong>
+                <p>Front-end e-commerce UI with product listing, cart, and navigation.</p>
+                 <a href="https://github.com/harini-012/project5-website" target="_blank">GitHub</a>
+				  <div class="video-box">
+        <iframe
+    src="https://drive.google.com/file/d/1zgHuq1FRuZGoiyv0971Xw7qIULa2RfKw/preview
+"
+    title="Zayla Vista Demo"
+    allow="autoplay"
+    allowfullscreen>
+</iframe>
+
+		</div>
+            </div>
+            <div class="card">
+                <strong>Optimization of NASA Space Project (Project 3 Optimization)</strong>
+                <p>Improved UI performance and structure of black hole project.</p>
+                 <a href="https://github.com/harini-012/project6-website" target="_blank">GitHub</a>
+				  <div class="video-box">
+        <iframe
+    src="https://drive.google.com/file/d/1urh29GJ6qA6_DqFDqpG8cpHZDOhFQyFw/preview"
+    title="Nasa Vista Demo"
+    allow="autoplay"
+    allowfullscreen>
+</iframe>
+
+		</div>
+            </div>
+            <div class="card">
+                <strong>Budget Buddy – Personal Budget Tracker</strong>
+                <p>Interface to manage expenses, categories, and spending summaries.</p>
+                 <a href="https://github.com/harini-012/project7-website" target="_blank">GitHub</a>
+				  <div class="video-box">
+        <iframe
+    src="https://drive.google.com/file/d/1lB1DCzD98Kvrmo8IZNiGJELZRpd7jA9A/preview"
+
+    title="Budget Vista Demo"
+    allow="autoplay"
+    allowfullscreen>
+</iframe>
+
+		</div>
+            </div>
+            <div class="card">
+                <strong>Connect Flow – CRM Application</strong>
+                <p>Customer management UI for leads, contacts, and workflow stages.</p>
+                 <a href="https://github.com/harini-012/project-8-crm" target="_blank">GitHub</a>
+				  <div class="video-box">
+        <iframe
+    src="https://drive.google.com/file/d/1CkQbGs7BjHh-Qdnq8AsYjTwYGyxrJb2i/preview
+"
+    title="Venue Vista Demo"
+    allow="autoplay"
+    allowfullscreen>
+</iframe>
+
+		</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Communication -->
+    <section> <h2>4. Communication & Presentations</h2> <div class="card presentation-card"> <ul> <li>Delivered multiple college presentations</li> <li>Participated in college & inter-college speech competitions</li> <li>Active participation in various technical inter-college events</li> <li>Smart India Hackathon (SIH) – Participated twice</li> <li>Smart Ideathon</li> <li>EF English Certificate – Maximum grade C1</li> <li>For more details, visit my <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">LinkedIn profile</a></li> </ul> </div> </section>
+
+    <!-- Leadership -->
+    <section>
+        <h2>5. Leadership & Initiative</h2>
+        <div class="section-gradient">
+            <ul class="timeline">
+                <li>Coordinated presentations with peers</li>
+                
+                <li>Worked closely with mentors for feedback</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Learning Mindset -->
+    <section>
+        <h2>6. Learning Mindset</h2>
+        <div class="section-gradient">
+            <p>I follow a learn–build–reflect cycle, focusing on fundamentals and gradual improvement rather than shortcuts.</p>
+        </div>
+    </section>
+
+    <!-- Career Direction -->
+    <section>
+        <h2>7. Career Direction</h2>
+        <div class="section-gradient">
+            <p>Preparing for roles that value strong fundamentals, front-end skills, problem-solving, and teamwork.</p>
+        </div>
+    </section>
+	<section> <h2>8. Awards & Prizes</h2> <div class="card awards-card"> <ul>  <li>District-level Speech Competition – Runner-Up</li> <li>College-level Codathan Coding Competition – 1st Prize</li> </ul> </div> </section>
+<h2>9. Industry Exposure & Certifications</h2>
+<div class="section-gradient">
+    <ul class="timeline">
+        <li>Visited and interacted with Microsoft CEO as part of a Microsoft Certification–linked academic exposure</li>
+        <li>Completed multiple professional certifications through Coursera and Udemy</li>
+        <li>Completed UiPath learning modules focused on automation fundamentals</li>
+        <li>Participated in Salesforce Agentforce examination initiatives</li>
+    </ul>
+</div>
+
+<h2>10. Academic Consistency & Persistence</h2>
+<div class="section-gradient">
+    <ul class="timeline">
+        <li>Maintained consistent academic excellence by securing the highest academic standing in school for three consecutive years</li>
+        <li>Demonstrated sustained effort, discipline, and long-term academic focus</li>
+    </ul>
+</div>
+    <!-- Footer -->
+    <footer>Resume Addendum | Harini R</footer>
+</div>
+</body>
+</html>
